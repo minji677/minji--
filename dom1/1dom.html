@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1dom</title>
+    <script src="./1dom.js" defer></script>
+    <!-- 
+    DOM 조작을 위한 javascrip 파일의 위치
+    
+        1. head 영역에 script 요소로 적용하기
+        2. <script src=""></script> 로 파일 연결하기
+
+        3. body 종료 이전으로 위치하기
+        4. window.onload 이벤트 이용하기
+        5. defer 속성 넣기
+
+        가장 효율적인 방법 3,5
+            defer 속성: 
+            HTML 파싱이 완료된 후 스크립트가 실행되도록 보장하면서도, 
+            다운로드는 병렬로 진행됩니다. 
+            이는 페이지 로딩 속도를 향상시킵니다.
+
+            외부 파일 사용: 
+            브라우저가 스크립트를 캐싱할 수 있어 
+            재방문 시 로딩 속도가 빨라지며, 코드 유지보수가 용이합니다.
+
+            js 코드는 모듈화 하고 관심사 분리하는 방법이 좋습니다.
+            모듈화 : 프로그램을 독립적인 부분(모듈)으로 나누는 것을 의미
+            관심사 : 프로그램의 각 부분이 단일한 "관심사"(기능, 책임)에만 집중해야 한다는 원칙
+    -->
+  </head>
+  <body>
+    <h1 class="target">1dom</h1>
+
+    <ul class="list">
+      <li>리스트1</li>
+      <li>리스트2</li>
+      <li>리스트3</li>
+      <li>리스트4</li>
+      <li>리스트5</li>
+      <li>리스트6</li>
+    </ul>
+    <ul class="list">
+      <li>리스트1</li>
+      <li>리스트2</li>
+      <li>리스트3</li>
+    </ul>
+
+    <div id="target">
+      <div>여기에 출력</div>
+      <p>1번요소</p>
+      <p>2번요소</p>
+    </div>
+  </body>
+</html>

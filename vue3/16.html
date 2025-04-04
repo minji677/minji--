@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>파일명</title>
+  </head>
+  <body>
+    <div id="app">
+      <p>data 옵션에 등록된 초기 데이터 - {{message}}</p>
+      <p>computed 옵션에 등록된 함수 fullName() - {{fullName}}</p>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript">
+      const { createApp } = Vue;
+
+      let vm = createApp({
+        name: 'App',
+        data() {
+          return {
+            message: 'Hello Vue!',
+            name: 'somy',
+            lastName: 'park',
+          };
+        },
+        computed: {
+          fullName() {
+            return `${this.lastName} ${this.name}`;
+          },
+        },
+        mounted() {
+          console.log(this.$data);
+        },
+      });
+      vm.mount('#app');
+    </script>
+  </body>
+</html>

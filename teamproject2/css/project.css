@@ -1,0 +1,42 @@
+body {
+  background-color: #f9efe4;
+}
+.sec1 {
+  text-align: center;
+}
+.button .center {
+  justify-content: center;
+}
+.button {
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  display: flex;
+  float: left;
+  width: 120px;
+  height: 150px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 30px;
+  padding: 5px;
+  text-align: left;
+}
+.box img {
+  position: absolute;
+  top: 35%;
+  width: 100px;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  width: 100%; /* 컨테이너의 너비에 맞춤 */
+  height: auto; /* 컨테이너의 높이에 맞춤 */
+}
